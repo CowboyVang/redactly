@@ -34,13 +34,21 @@
 - **Session persistence** - Mappings are saved to a `.redact-map.json` file so you can restore across sessions
 
 <p align="center">
-  <img src="docs/images/08-detection-types.png" width="720" alt="Detection types: keywords, email, IP, hostname, path, username, MAC, phone" />
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="docs/images/08-detection-types-light.png" />
+    <source media="(prefers-color-scheme: dark)" srcset="docs/images/08-detection-types.png" />
+    <img src="docs/images/08-detection-types-light.png" width="720" alt="Detection types: keywords, email, IP, hostname, path, username, MAC, phone" />
+  </picture>
 </p>
 
 ## How It Works
 
 <p align="center">
-  <img src="docs/images/07-how-it-works-flow.png" width="720" alt="How it works: Add Keywords, Paste Text, Redact & Copy, Restore Later" />
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="docs/images/07-how-it-works-flow-light.png" />
+    <source media="(prefers-color-scheme: dark)" srcset="docs/images/07-how-it-works-flow.png" />
+    <img src="docs/images/07-how-it-works-flow-light.png" width="720" alt="How it works: Add Keywords, Paste Text, Redact & Copy, Restore Later" />
+  </picture>
 </p>
 
 1. **Add keywords** - Enter names, project codes, or any terms you want redacted

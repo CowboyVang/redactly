@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, initial-scale=1">
+  <title>Redactly — Detection Types (Light)</title>
+  <link rel="stylesheet" href="shared-styles.css">
+  <style>
+    html, body { margin: 0; padding: 0; width: 1200px; height: 520px; overflow: hidden; }
+    body { background: oklch(0.975 0.005 256); }
+  </style>
+</head>
+<body class="feature-bg">
+<div class="detection-grid">
+  <!-- Row 1 -->
+  <div class="detection-card">
+    <div class="detection-card-header">
+      <div class="detection-dot" style="background: var(--sr-purple);"></div>
+      <div class="detection-card-title">Keywords</div>
+    </div>
+    <div class="detection-example">
+      <span class="detection-before">John Mueller</span><br>
+      <span class="detection-arrow">&darr;</span><br>
+      <span class="token-pill purple">{PEOPLE-1}</span>
+    </div>
+  </div>
+
+  <div class="detection-card">
+    <div class="detection-card-header">
+      <div class="detection-dot" style="background: var(--sr-blue);"></div>
+      <div class="detection-card-title">Email</div>
+    </div>
+    <div class="detection-example">
+      <span class="detection-before">jmueller@acme.com</span><br>
+      <span class="detection-arrow">&darr;</span><br>
+      <span class="token-pill blue">{EMAIL-1}</span>
+    </div>
+  </div>
+
+  <div class="detection-card">
+    <div class="detection-card-header">
+      <div class="detection-dot" style="background: var(--sr-orange);"></div>
+      <div class="detection-card-title">IP Address</div>
+    </div>
+    <div class="detection-example">
+      <span class="detection-before">192.168.1.45</span><br>
+      <span class="detection-arrow">&darr;</span><br>
+      <span class="token-pill orange">{IP-1}</span>
+    </div>
+  </div>
+
+  <div class="detection-card">
+    <div class="detection-card-header">
+      <div class="detection-dot" style="background: var(--sr-mint);"></div>
+      <div class="detection-card-title">Hostname</div>
+    </div>
+    <div class="detection-example">
+      <span class="detection-before">mail.acme-corp.com</span><br>
+      <span class="detection-arrow">&darr;</span><br>
+      <span class="token-pill mint">{HOST-1}</span>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="detection-card">
+    <div class="detection-card-header">
+      <div class="detection-dot" style="background: var(--sr-green);"></div>
+      <div class="detection-card-title">File Path</div>
+    </div>
+    <div class="detection-example">
+      <span class="detection-before">/var/log/auth.log</span><br>
+      <span class="detection-arrow">&darr;</span><br>
+      <span class="token-pill green">{PATH-1}</span>
+    </div>
+  </div>
+
+  <div class="detection-card">
+    <div class="detection-card-header">
+      <div class="detection-dot" style="background: var(--sr-pink);"></div>
+      <div class="detection-card-title">Username</div>
+    </div>
+    <div class="detection-example">
+      <span class="detection-before">@jmueller</span><br>
+      <span class="detection-arrow">&darr;</span><br>
+      <span class="token-pill pink">{USER-1}</span>
+    </div>
+  </div>
+
+  <div class="detection-card">
+    <div class="detection-card-header">
+      <div class="detection-dot" style="background: var(--sr-yellow);"></div>
+      <div class="detection-card-title">MAC Address</div>
+    </div>
+    <div class="detection-example">
+      <span class="detection-before">aa:bb:cc:dd:ee:ff</span><br>
+      <span class="detection-arrow">&darr;</span><br>
+      <span class="token-pill yellow">{MAC-1}</span>
+    </div>
+  </div>
+
+  <div class="detection-card">
+    <div class="detection-card-header">
+      <div class="detection-dot" style="background: var(--sr-red);"></div>
+      <div class="detection-card-title">Phone</div>
+    </div>
+    <div class="detection-example">
+      <span class="detection-before">+1-555-123-4567</span><br>
+      <span class="detection-arrow">&darr;</span><br>
+      <span class="token-pill red">{PHONE-1}</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
