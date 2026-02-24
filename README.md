@@ -20,18 +20,18 @@
 
 ## Features
 
-- **Keyword-first matching**:Define custom keywords that always get redacted, with priority over auto-detect patterns
-- **Auto-detect patterns**:Automatically catches emails, IP addresses, hostnames, file paths, and usernames
-- **Fuzzy matching**:Finds keyword variants and near-matches so sensitive terms don't slip through
-- **One-click restore**:Reverse redacted tokens back to the original text using stored mappings
-- **Session persistence**:Mappings are saved to a `.redact-map.json` file so you can restore across sessions
+- **Keyword-first matching** - Define custom keywords that always get redacted, with priority over auto-detect patterns
+- **Auto-detect patterns** - Automatically catches emails, IP addresses, hostnames, file paths, and usernames
+- **Fuzzy matching** - Finds keyword variants and near-matches so sensitive terms don't slip through
+- **One-click restore** - Reverse redacted tokens back to the original text using stored mappings
+- **Session persistence** - Mappings are saved to a `.redact-map.json` file so you can restore across sessions
 
 ## How It Works
 
-1. **Add keywords**:Enter names, project codes, or any terms you want redacted
-2. **Paste your text**:Drop in the content you plan to share (logs, documents, chat messages)
-3. **Copy & share**:Redactly replaces sensitive values with consistent tokens like `[KEYWORD-1]` or `[EMAIL-1]`
-4. **Restore later**:Paste the redacted text back in to reverse all tokens to their original values
+1. **Add keywords** - Enter names, project codes, or any terms you want redacted
+2. **Paste your text** - Drop in the content you plan to share (logs, documents, chat messages)
+3. **Copy & share** - Redactly replaces sensitive values with consistent tokens like `[KEYWORD-1]` or `[EMAIL-1]`
+4. **Restore later** - Paste the redacted text back in to reverse all tokens to their original values
 
 ## Installation
 
