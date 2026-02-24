@@ -15,8 +15,15 @@
 <br />
 
 <p align="center">
-  <img src="docs/images/redactly-hero.png" width="720" alt="Redactly app showing redact panel with sample text" />
+  <img src="docs/images/01-hero-dark.png" width="720" alt="Redactly app showing redact panel with sample text" />
 </p>
+
+<details>
+<summary>Light mode</summary>
+<p align="center">
+  <img src="docs/images/02-hero-light.png" width="720" alt="Redactly in light mode" />
+</p>
+</details>
 
 ## Features
 
@@ -26,7 +33,15 @@
 - **One-click restore** - Reverse redacted tokens back to the original text using stored mappings
 - **Session persistence** - Mappings are saved to a `.redact-map.json` file so you can restore across sessions
 
+<p align="center">
+  <img src="docs/images/08-detection-types.png" width="720" alt="Detection types: keywords, email, IP, hostname, path, username, MAC, phone" />
+</p>
+
 ## How It Works
+
+<p align="center">
+  <img src="docs/images/07-how-it-works-flow.png" width="720" alt="How it works: Add Keywords, Paste Text, Redact & Copy, Restore Later" />
+</p>
 
 1. **Add keywords** - Enter names, project codes, or any terms you want redacted
 2. **Paste your text** - Drop in the content you plan to share (logs, documents, chat messages)
@@ -97,6 +112,18 @@ src-tauri/src/          # Rust backend
 ## Contributing
 
 Contributions are welcome. Please open an issue to discuss larger changes before submitting a PR.
+
+## Acknowledgements
+
+- [Tauri](https://tauri.app) - Desktop app framework
+- [Nord](https://www.nordtheme.com) - Color palette inspiration
+- [shadcn/ui](https://ui.shadcn.com) - Component design patterns
+- [Radix UI](https://www.radix-ui.com) - Headless component primitives
+- [Lucide](https://lucide.dev) - Icon library
+- [Geist](https://vercel.com/font) - UI typeface by Vercel
+- [JetBrains Mono](https://www.jetbrains.com/lp/mono/) - Monospace typeface
+- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS
+- [Vite](https://vite.dev) - Frontend build tool
 
 ## License
 
