@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-save-auto-detect-config"
+description = "Enables the save_auto_detect_config command without any pre-configured scope."
+commands.allow = ["save_auto_detect_config"]
+
+[[permission]]
+identifier = "deny-save-auto-detect-config"
+description = "Denies the save_auto_detect_config command without any pre-configured scope."
+commands.deny = ["save_auto_detect_config"]

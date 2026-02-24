@@ -1,0 +1,27 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "enables the default permissions",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default",
+    "dialog:default",
+    "dialog:allow-open",
+    "allow-redact",
+    "allow-restore",
+    "allow-get-mappings",
+    "allow-clear-session",
+    "allow-set-workspace-dir",
+    "allow-get-keywords",
+    "allow-save-keywords-cmd",
+    "allow-get-auto-detect-config",
+    "allow-save-auto-detect-config",
+    "dialog:allow-save",
+    "allow-export-keywords-cmd",
+    "allow-export-mappings-cmd",
+    "allow-import-keywords-cmd",
+    "allow-remove-mapping-cmd"
+  ]
+}

@@ -1,0 +1,244 @@
+@import "tailwindcss";
+
+/* Self-hosted fonts — no external network requests */
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/Geist-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/Geist-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/Geist-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/JetBrainsMono-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/JetBrainsMono-SemiBold.woff2") format("woff2");
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", "Fira Code", "Cascadia Code",
+    monospace;
+
+  --radius-sm: 0.25rem;
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+}
+
+/* Light Theme — Nord Snow Storm inspired (default) */
+:root {
+  --radius: 0.5rem;
+
+  --background: oklch(0.975 0.005 256);
+  --foreground: oklch(0.220 0.015 256);
+
+  --card: oklch(0.990 0.003 256);
+  --card-foreground: oklch(0.220 0.015 256);
+
+  --popover: oklch(0.995 0.002 256);
+  --popover-foreground: oklch(0.220 0.015 256);
+
+  --primary: oklch(0.550 0.100 240);
+  --primary-foreground: oklch(0.990 0.003 256);
+
+  --secondary: oklch(0.940 0.010 256);
+  --secondary-foreground: oklch(0.250 0.015 256);
+
+  --muted: oklch(0.930 0.008 256);
+  --muted-foreground: oklch(0.450 0.015 248);
+
+  --accent: oklch(0.930 0.008 256);
+  --accent-foreground: oklch(0.220 0.015 256);
+
+  --destructive: oklch(0.530 0.150 25);
+
+  --border: oklch(0.880 0.010 256);
+  --input: oklch(0.960 0.005 256);
+  --ring: oklch(0.550 0.100 240);
+
+  /* Sidebar */
+  --sidebar: oklch(0.960 0.008 256);
+  --sidebar-foreground: oklch(0.350 0.015 248);
+  --sidebar-accent: oklch(0.920 0.010 256);
+  --sidebar-accent-foreground: oklch(0.220 0.015 256);
+  --sidebar-border: oklch(0.870 0.010 256);
+
+  /* Redactly category colors — darkened for light backgrounds */
+  --sr-purple: #9b6e97;
+  --sr-orange: #b86f5a;
+  --sr-blue: #5e81a2;
+  --sr-mint: #5a9a99;
+  --sr-pink: #a5464f;
+  --sr-green: #6d8e54;
+  --sr-yellow: #b39440;
+  --sr-red: #a5464f;
+
+  /* Shadow intensity for cards */
+  --card-inset-shadow: rgba(0, 0, 0, 0.06);
+}
+
+/* Dark Theme — Nord Polar Night */
+.dark {
+  --background: oklch(0.178 0.015 256);
+  --foreground: oklch(0.941 0.012 248);
+
+  --card: oklch(0.201 0.015 256);
+  --card-foreground: oklch(0.941 0.012 248);
+
+  --popover: oklch(0.224 0.015 256);
+  --popover-foreground: oklch(0.941 0.012 248);
+
+  --primary: oklch(0.685 0.075 240);
+  --primary-foreground: oklch(0.178 0.015 256);
+
+  --secondary: oklch(0.224 0.015 256);
+  --secondary-foreground: oklch(0.941 0.012 248);
+
+  --muted: oklch(0.280 0.015 256);
+  --muted-foreground: oklch(0.800 0.015 248);
+
+  --accent: oklch(0.280 0.015 256);
+  --accent-foreground: oklch(0.941 0.012 248);
+
+  --destructive: oklch(0.570 0.130 20);
+
+  --border: oklch(0.400 0.015 256);
+  --input: oklch(0.130 0.010 256);
+  --ring: oklch(0.685 0.075 240);
+
+  /* Sidebar */
+  --sidebar: oklch(0.165 0.015 256);
+  --sidebar-foreground: oklch(0.800 0.015 248);
+  --sidebar-accent: oklch(0.280 0.015 256);
+  --sidebar-accent-foreground: oklch(0.941 0.012 248);
+  --sidebar-border: oklch(0.350 0.015 256);
+
+  /* Redactly category colors — Nord Aurora/Frost */
+  --sr-purple: #b48ead;
+  --sr-orange: #d08770;
+  --sr-blue: #81a1c1;
+  --sr-mint: #8fbcbb;
+  --sr-pink: #bf616a;
+  --sr-green: #a3be8c;
+  --sr-yellow: #ebcb8b;
+  --sr-red: #bf616a;
+
+  --card-inset-shadow: rgba(0, 0, 0, 0.15);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+/* Prevent text selection in UI chrome */
+[data-slot="sidebar"],
+[data-slot="nav"] {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Improve readability on small label text */
+[data-slot="sidebar"] {
+  line-height: 1.6;
+}
+
+/* Custom scrollbar — light mode */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.800 0.010 256);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.700 0.010 256);
+}
+
+/* Custom scrollbar — dark mode */
+.dark ::-webkit-scrollbar-thumb {
+  background: oklch(0.350 0.015 256);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.400 0.015 256);
+}
+
+/* Animations */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

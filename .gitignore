@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+src-tauri/target/
+src-tauri/WixTools/
+src-tauri/gen/
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Tool caches
+.eslintcache
+*.tsbuildinfo
+
+# Test artifacts
+.playwright-mcp/
+coverage/
+
+# Worktrees
+.worktrees/
+
+# Internal planning docs
+docs/plans/

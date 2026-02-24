@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-export-keywords-cmd"
+description = "Enables the export_keywords_cmd command without any pre-configured scope."
+commands.allow = ["export_keywords_cmd"]
+
+[[permission]]
+identifier = "deny-export-keywords-cmd"
+description = "Denies the export_keywords_cmd command without any pre-configured scope."
+commands.deny = ["export_keywords_cmd"]

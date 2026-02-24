@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-redact"
+description = "Enables the redact command without any pre-configured scope."
+commands.allow = ["redact"]
+
+[[permission]]
+identifier = "deny-redact"
+description = "Denies the redact command without any pre-configured scope."
+commands.deny = ["redact"]
